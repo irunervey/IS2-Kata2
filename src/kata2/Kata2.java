@@ -7,10 +7,10 @@ import static jdk.nashorn.internal.objects.NativeArray.map;
 public class Kata2 {
 
     public static void main(String[] args) {
-        Integer [] data = {1,2,3,4,5,6,7,8,9,2,4,5,3,6,8};
+        String [] data = {"Maria","Pepe","Rosa","Juan","Pepe","Pepe","Rosa"};
         histogram histo = new histogram(data);    
-        Map<Integer, Integer> histogr = histo.getHistogram();
-        for (Integer key : histogr.keySet()) {
+        Map<String, Integer> histogr = histo.getHistogram();
+        for (String key : histogr.keySet()) {
             System.out.println(key + "==>" + histogr.get(key));
         }
            
